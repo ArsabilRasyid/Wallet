@@ -22,13 +22,17 @@ class ProfilScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               // Widget Ikon (Bisa dianggap sebagai foto profil)
-              const Icon(Icons.account_circle, size: 100, color: Colors.blue),
+              CircleAvatar(
+                radius: 60, // Ukuran lingkaran
+                backgroundColor: Colors.grey[200],
+                backgroundImage: AssetImage('assets/profile.jpg'),
+              ),
 
               const SizedBox(height: 10),
 
               // Widget Teks Nama
               const Text(
-                "Angga Dwi Aditya",
+                "Arsabil Rasyid",
                 style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
               ),
               const SizedBox(height: 5),
@@ -58,7 +62,7 @@ class ProfilScreen extends StatelessWidget {
                 children: const [
                   Icon(Icons.phone_android, color: Colors.red),
                   SizedBox(width: 5),
-                  Text("Email : Angga2026@gmail.com"),
+                  Text("Email : Sabil2000@gmail.com"),
                 ],
               ),
             ],
